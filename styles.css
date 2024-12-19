@@ -22,10 +22,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.music-section {
-    margin: 30px 0;
-}
-
 audio {
     width: 100%;
     margin-bottom: 10px;
@@ -51,8 +47,21 @@ audio {
     transform: scale(1.1);
 }
 
-.result {
-    margin-top: 40px;
+.next-button,
+.restart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.next-button:hover,
+.restart-button:hover {
+    background-color: #555;
 }
 
 #color-palette {
@@ -66,19 +75,4 @@ audio {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-#submit-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-#submit-button:hover {
-    background-color: #555;
 }
