@@ -9,73 +9,10 @@
 <body>
 
     <div class="container">
-        <h1>Musik-Farb-Test</h1>
-        <p>Hören Sie sich die Musik an und wählen Sie eine Farbe, die zu der Musik passt.</p>
-
-        <!-- Musik 1 -->
-        <div class="music-section">
-            <audio id="audio1" controls>
-                <source src="music1.mp3" type="audio/mp3">
-                Ihr Browser unterstützt kein Audio-Tag.
-            </audio>
-            <div class="color-options">
-                <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(1, '#FF5733')"></button>
-                <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(1, '#33FF57')"></button>
-                <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(1, '#3357FF')"></button>
-                <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(1, '#F1C40F')"></button>
-            </div>
-        </div>
-
-        <!-- Musik 2 -->
-        <div class="music-section">
-            <audio id="audio2" controls>
-                <source src="music2.mp3" type="audio/mp3">
-                Ihr Browser unterstützt kein Audio-Tag.
-            </audio>
-            <div class="color-options">
-                <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(2, '#FF5733')"></button>
-                <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(2, '#33FF57')"></button>
-                <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(2, '#3357FF')"></button>
-                <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(2, '#F1C40F')"></button>
-            </div>
-        </div>
-
-        <!-- Musik 3 -->
-        <div class="music-section">
-            <audio id="audio3" controls>
-                <source src="music3.mp3" type="audio/mp3">
-                Ihr Browser unterstützt kein Audio-Tag.
-            </audio>
-            <div class="color-options">
-                <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(3, '#FF5733')"></button>
-                <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(3, '#33FF57')"></button>
-                <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(3, '#3357FF')"></button>
-                <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(3, '#F1C40F')"></button>
-            </div>
-        </div>
-
-        <!-- Musik 4 -->
-        <div class="music-section">
-            <audio id="audio4" controls>
-                <source src="music4.mp3" type="audio/mp3">
-                Ihr Browser unterstützt kein Audio-Tag.
-            </audio>
-            <div class="color-options">
-                <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(4, '#FF5733')"></button>
-                <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(4, '#33FF57')"></button>
-                <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(4, '#3357FF')"></button>
-                <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(4, '#F1C40F')"></button>
-            </div>
-        </div>
-
-        <!-- Ergebnis -->
-        <div class="result">
-            <h2>Ihr Ergebnis:</h2>
-            <div id="color-palette"></div>
-            <button id="submit-button" onclick="showResult()">Ergebnis anzeigen</button>
-        </div>
+        <h1>Willkommen zum Musik-Farb-Test!</h1>
+        <p>Hören Sie sich jedes Musikstück an und wählen Sie die Farbe, die am besten dazu passt.</p>
+        <a href="music1.html" class="start-button">Starten Sie den Test</a>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
