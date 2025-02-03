@@ -86,3 +86,8 @@ audio {
   display: inline-block;
   font-size: 16px;
 }
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
