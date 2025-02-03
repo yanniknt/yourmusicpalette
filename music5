@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musik 2 - Musik-Farb-Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Musik 5</h1>
+        <audio id="audio2" controls>
+            <source src="music2.mp3" type="audio/mp3">
+            Ihr Browser unterstützt kein Audio-Tag.
+        </audio>
+
+        <div class="color-options">
+            <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(2, '#FF5733')"></button>
+            <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(2, '#33FF57')"></button>
+            <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(2, '#3357FF')"></button>
+            <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(2, '#F1C40F')"></button>
+        </div>
+
+        <a href="result.html" class="next-button">Nächste Musik</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
