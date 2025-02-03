@@ -1,7 +1,7 @@
 window.onload = function () {
     const selectedColors = JSON.parse(localStorage.getItem('selectedColors')) || [];
 
-    if (selectedColors.filter(Boolean).length === 4) {
+    if (selectedColors.filter(Boolean).length === 5) {
         const resultDiv = document.getElementById("color-palette");
         resultDiv.innerHTML = "";
 
