@@ -74,6 +74,4 @@ h1 {
 }
 
 
-document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
-document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
