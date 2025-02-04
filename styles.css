@@ -46,7 +46,7 @@ html, body {
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    font-family: 'oi';
+    font-family: 'oi-regular';
 }
 
 #playPauseButton {
