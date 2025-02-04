@@ -17,6 +17,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const colorButtons = document.querySelectorAll(".color-button");
+
+    colorButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            // Remove the 'selected' class from all buttons
+            colorButtons.forEach(btn => btn.classList.remove("selected"));
+            
+            // Add the 'selected' class to the clicked button
+            button.classList.add("selected");
+        });
+    });
+});
+
+
 function selectColor(questionNumber, color) {
     selectedColors[questionNumber - 1] = color;
     localStorage.setItem('selectedColors', JSON.stringify(selectedColors));
