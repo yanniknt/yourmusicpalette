@@ -1,12 +1,9 @@
-let selectedColors = JSON.parse(localStorage.getItem('selectedColors')) || [];
-let audio = new Audio(); // Erstellt ein unsichtbares Audio-Element
-let isPlaying = false;
-let currentTrack = 1; // Startet mit Track 1
-
 document.addEventListener("DOMContentLoaded", function() {
     const audioElement = document.getElementById("audioElement");
     const playPauseButton = document.getElementById("playPauseButton");
+    const colorButtons = document.querySelectorAll(".color-button");
 
+    // Play/Pause button functionality
     playPauseButton.addEventListener("click", function() {
         if (audioElement.paused) {
             audioElement.play();
@@ -16,11 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
             playPauseButton.textContent = "Play";
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
-    const colorButtons = document.querySelectorAll(".color-button");
-
+    // Color button selection functionality
     colorButtons.forEach(button => {
         button.addEventListener("click", function() {
             // Remove the 'selected' class from all buttons
@@ -31,33 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
-function selectColor(questionNumber, color) {
-    selectedColors[questionNumber - 1] = color;
-    localStorage.setItem('selectedColors', JSON.stringify(selectedColors));
-    updateSelectionUI(questionNumber, color);
-}
-
-function updateSelectionUI(questionNumber, color) {
-    document.querySelectorAll(`.color-button`).forEach(btn => {
-        if (btn.getAttribute("onclick").includes(`selectColor(${questionNumber},`)) {
-            btn.style.border = "none";
-        }
-    });
-
-    const selectedButton = [...document.querySelectorAll(".color-button")].find(
-        btn => btn.style.backgroundColor === color
-    );
-
-    if (selectedButton) {
-        selectedButton.style.border = "3px solid black";
-    }
-}
-
-
-
-
 
 
 
