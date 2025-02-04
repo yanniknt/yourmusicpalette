@@ -15,20 +15,23 @@
 <body>
 
     <div class="container">
-        <h1>Musik 5</h1>
+        <h1>RE:STACKS - BON IVER</h1>
       
         <button id="playPauseButton">Play</button>
     <audio id="audioElement" src="restacks.mp3"></audio>
-        <div class="color-options">
-            <button class="color-button" style="background-color: #FF5733;" onclick="selectColor(2, '#FF5733')"></button>
-            <button class="color-button" style="background-color: #33FF57;" onclick="selectColor(2, '#33FF57')"></button>
-            <button class="color-button" style="background-color: #3357FF;" onclick="selectColor(2, '#3357FF')"></button>
-            <button class="color-button" style="background-color: #F1C40F;" onclick="selectColor(2, '#F1C40F')"></button>
-        </div>
-
-        <a href="result.html" class="next-button">Nächste Musik</a>
+          <div id="colorButtonsContainer">
+        <button class="color-button" style="background-color: red;" data-color="red"></button>
+        <button class="color-button" style="background-color: green;" data-color="green"></button>
+        <button class="color-button" style="background-color: blue;" data-color="blue"></button>
+        <!-- Add more buttons as needed -->
     </div>
 
+    <div id="resultContainer"></div>
+
     <script src="script.js"></script>
+    <script src="result.js"></script>
+        <a href="music2.html" class="next-button">Nächste Musik</a>
+
+
 </body>
 </html>
