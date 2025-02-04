@@ -41,9 +41,8 @@ function updateSelectionUI(questionNumber, color) {
     if (selectedButton) {
         selectedButton.style.border = "3px solid black";
     }
-}
 
-document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
+    document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
 document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
 
@@ -57,4 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
     document.getElementById("playPauseButton").addEventListener("click", playPauseAudio);
 });
+
+}
+
 
