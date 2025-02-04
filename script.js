@@ -17,21 +17,12 @@ function updateSelectionUI(questionNumber, color) {
         }
     });
 
-    // Markiere das geklickte Element
+    // Finde den geklickten Button und markiere ihn
     const selectedButton = [...document.querySelectorAll(".color-button")].find(
         btn => btn.style.backgroundColor === color
     );
 
     if (selectedButton) {
-        selectedButton.style.border = "3px solid black"; // Markierung
+        selectedButton.style.border = "3px solid black"; // Markiere die Auswahl
     }
 }
-
-// Lade bestehende Auswahl beim Laden der Seite
-window.onload = function () {
-    selectedColors.forEach((color, index) => {
-        if (color) {
-            updateSelectionUI(index + 1, color);
-        }
-    });
-};
