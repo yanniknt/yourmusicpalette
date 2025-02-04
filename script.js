@@ -46,3 +46,15 @@ function updateSelectionUI(questionNumber, color) {
 document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
 document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
+    document.getElementById("playPauseButton").addEventListener("click", playPauseAudio);
+});
+
