@@ -1,3 +1,4 @@
+// Verbesserte Version von result.js
 window.onload = function () {
     const selectedColors = JSON.parse(localStorage.getItem('selectedColors')) || [];
     
