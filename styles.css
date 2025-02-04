@@ -67,6 +67,12 @@ h1 {
     background-color: #27ae60;
 }
 `;
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
