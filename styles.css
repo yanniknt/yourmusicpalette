@@ -30,7 +30,7 @@ html, body {
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
-    background-opacity: 0.5;
+    opacity: background 0.5;
 }
 
 .next-button:hover, .restart-button:hover {
@@ -55,7 +55,7 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
     transition: background 0.3s;
-    background-opacity:0.5;
+    opacity:background 0.5;
 }
 
 #playPauseButton:hover {
@@ -93,7 +93,7 @@ html, body {
     cursor: pointer;
     transition: background 0.3s;
     user-select: none;
-    background-opacity:0.5;
+    opacity:background 0.5;
 }
 
 #playPauseButton:hover {
