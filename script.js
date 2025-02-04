@@ -1,12 +1,15 @@
 let selectedColors = JSON.parse(localStorage.getItem('selectedColors')) || [];
-
-let audio = new Audio();
-let currentTrack = 1;
+let audio = new Audio(); // Erstellt ein unsichtbares Audio-Element
 let isPlaying = false;
+let currentTrack = 1; // Startet mit Track 1
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
-    document.getElementById("playPauseButton").addEventListener("click", playPauseAudio);
+document.addEventListener("DOMContentLoaded", function () {
+    const playPauseButton = document.createElement("div");
+    playPauseButton.id = "playPauseButton";
+    playPauseButton.textContent = "Play";
+    document.body.appendChild(playPauseButton);
+
+    playPauseButton.addEventListener("click", playPauseAudio);
 });
 
 function playPauseAudio() {
@@ -15,7 +18,7 @@ function playPauseAudio() {
         isPlaying = false;
         document.getElementById("playPauseButton").textContent = "Play";
     } else {
-        audio.src = `music${currentTrack}.mp3`;
+        audio.src = `music${currentTrack}.mp3`; // Setzt die aktuelle Musikdatei
         audio.play();
         isPlaying = true;
         document.getElementById("playPauseButton").textContent = "Pause";
@@ -42,15 +45,32 @@ function updateSelectionUI(questionNumber, color) {
     if (selectedButton) {
         selectedButton.style.border = "3px solid black";
     }
-
 }
 
+// Verbesserte Version von result.js
+window.onload = function () {
+    const selectedColors = JSON.parse(localStorage.getItem('selectedColors')) || [];
+    
+    if (selectedColors.length > 0 && selectedColors.every(color => color)) {
+        const resultDiv = document.getElementById("color-palette");
+        resultDiv.innerHTML = "";
 
-    document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
-
-document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
-
-
+        selectedColors.forEach(color => {
+            if (color) {
+                const colorBox = document.createElement("div");
+                colorBox.style.backgroundColor = color;
+                colorBox.style.width = "50px";
+                colorBox.style.height = "50px";
+                colorBox.style.display = "inline-block";
+                colorBox.style.margin = "5px";
+                colorBox.style.border = "1px solid #000";
+                resultDiv.appendChild(colorBox);
+            }
+        });
+    } else {
+        alert("Es scheint, als hätten Sie nicht alle Farben ausgewählt. Bitte gehen Sie zurück und schließen Sie den Test ab.");
+    }
+};
 
 
 
