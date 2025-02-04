@@ -1,4 +1,12 @@
 const styles = `
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .color-button {
     width: 50px;
     height: 50px;
@@ -55,10 +63,4 @@ h1 {
 
 document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
 
-document.body.insertAdjacentHTML("afterbegin", '<div id="playPauseButton" onclick="playPauseAudio()">Play</div>');
-
-.oi-regular {
-  font-family: "Oi", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+document.body.insertAdjacentHTML("afterbegin", '<div class="container"><div id="playPauseButton">Play</div></div>');
