@@ -3,28 +3,20 @@ let audio = new Audio(); // Erstellt ein unsichtbares Audio-Element
 let isPlaying = false;
 let currentTrack = 1; // Startet mit Track 1
 
-document.addEventListener("DOMContentLoaded", function () {
-    const playPauseButton = document.createElement("div");
-    playPauseButton.id = "playPauseButton";
-    playPauseButton.textContent = "Play";
-    document.body.appendChild(playPauseButton);
+document.addEventListener("DOMContentLoaded", function() {
+    const audioElement = document.getElementById("audioElement");
+    const playPauseButton = document.getElementById("playPauseButton");
 
-    playPauseButton.addEventListener("click", playPauseAudio);
+    playPauseButton.addEventListener("click", function() {
+        if (audioElement.paused) {
+            audioElement.play();
+            playPauseButton.textContent = "Pause";
+        } else {
+            audioElement.pause();
+            playPauseButton.textContent = "Play";
+        }
+    });
 });
-
-function playPauseAudio() {
-    if (isPlaying) {
-        audio.pause();
-        isPlaying = false;
-        document.getElementById("playPauseButton").textContent = "Play";
-    } else {
-        audio.src = `music${currentTrack}.mp3`; // Setzt die aktuelle Musikdatei
-        audio.play();
-        isPlaying = true;
-        document.getElementById("playPauseButton").textContent = "Pause";
-    }
-}
-
 function selectColor(questionNumber, color) {
     selectedColors[questionNumber - 1] = color;
     localStorage.setItem('selectedColors', JSON.stringify(selectedColors));
