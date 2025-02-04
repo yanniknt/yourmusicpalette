@@ -42,3 +42,7 @@ function updateSelectionUI(questionNumber, color) {
         selectedButton.style.border = "3px solid black";
     }
 }
+
+document.head.insertAdjacentHTML("beforeend", `<style>${styles}</style>`);
+
+document.body.insertAdjacentHTML("beforeend", '<div class="container"><div id="playPauseButton">Play</div></div>');
