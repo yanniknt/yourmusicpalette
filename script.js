@@ -4,6 +4,10 @@ let audio = new Audio();
 let currentTrack = 1;
 let isPlaying = false;
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("playPauseButton").addEventListener("click", playPauseAudio);
+});
+
 function playPauseAudio() {
     if (isPlaying) {
         audio.pause();
