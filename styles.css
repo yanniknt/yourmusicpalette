@@ -28,7 +28,6 @@ html, body {
     height: 800px;
     pointer-events: none;
     z-index: 1;
-
 }
 
 #rotating-text {
