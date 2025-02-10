@@ -119,3 +119,29 @@ html, body {
   object-fit: cover;
   opacity: 0.8;
 }
+
+
+
+#rotating-text {
+    animation: rotation 30s infinite linear; /*CHANGE SPEED*/
+    width: 100%;
+    align-items: center;
+}
+
+@keyframes rotation {
+from {
+transform: rotate(0deg);
+}
+
+to {
+transform: rotate(360deg);
+}
+}
+#rotating-text textPath { 
+    /*---------------- CHANGE TEXT APPEARANCE ----------------*/
+    font-size: 39px; 
+    font-family:  "Montserrat"; 
+    text-transform: uppercase;
+    letter-spacing: 20px; 
+    fill: #000; 
+}
