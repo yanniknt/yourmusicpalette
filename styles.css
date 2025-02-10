@@ -123,25 +123,25 @@ html, body {
 
 
 #rotating-text {
-    animation: rotation 30s infinite linear; /*CHANGE SPEED*/
+    animation: rotation 30s infinite linear;
     width: 100%;
     align-items: center;
+    animation-play-state: paused; /* Start paused by default */
 }
 
 @keyframes rotation {
-from {
-transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-to {
-transform: rotate(360deg);
-}
-}
-#rotating-text textPath { 
-    /*---------------- CHANGE TEXT APPEARANCE ----------------*/
-    font-size: 39px; 
-    font-family:  "Montserrat"; 
+#rotating-text textPath {
+    font-size: 39px;
+    font-family: "Montserrat";
     text-transform: uppercase;
-    letter-spacing: 20px; 
-    fill: #000; 
+    letter-spacing: 20px;
+    fill: #000;
 }
