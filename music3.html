@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musik 3 - Musik-Farb-Test</title>
+    <title>CHOP SUEY</title>
     <link rel="stylesheet" href="styles.css">
-      <style>
-        /* Hide the default audio bar */
+    <style>
         audio {
             display: none;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>CHOP SUEY - SYSTEM OF A DOWN</h1>
-    
-        <button id="playPauseButton">Play</button>
-    <audio id="audioElement" src="chopsuey.mp3"></audio>
-         <div id="colorButtonsContainer">
-        <button class="color-button" style="background-color: red;" data-color="red"></button>
-        <button class="color-button" style="background-color: green;" data-color="green"></button>
-        <button class="color-button" style="background-color: blue;" data-color="blue"></button>
-        <!-- Add more buttons as needed -->
+    <div class="rotating-text-container">
+        <svg id="rotating-text" viewBox="0 0 800 800">
+            <defs>
+                <path id="circle" 
+                      d="M400,400 m-200,0 a200,200 0 1,1 400,0 a200,200 0 1,1 -400,0"
+                      fill="none"/>
+            </defs>
+            <text>
+                <textPath xlink:href="#circle">CHOP SUEY - SYSTEM OF A DOWN</textPath>
+            </text>
+        </svg>
     </div>
 
-  
+    
+    <div class="container">
+      
+        <button id="playPauseButton">Play</button>
+        <audio id="audioElement" src="chopsuey.mp3"></audio>
+
+        <div id="colorButtonsContainer">
+            <button class="image-button" data-color="option11">
+                <img src="chopsuey1.png" alt="Option 11">
+            </button>
+            <button class="image-button" data-color="option12">
+                <img src="chopsuey2.png" alt="Option 12">
+            </button>
+            <button class="image-button" data-color="option13">
+                <img src="chopsuey3.png" alt="Option 13">
+            </button>
+            <button class="image-button" data-color="option14">
+                <img src="chopsuey4.png" alt="Option 14">
+            </button>
+            <button class="image-button" data-color="option15">
+                <img src="chopsuey5.png" alt="Option 15">
+            </button>
+        </div>
+
+        <a href="music4.html" class="next-button">NEXT</a>
+    </div>
 
     <script src="script.js"></script>
-  
-        <a href="music4.html" class="next-button">NEXT</a>
-
-
 </body>
 </html>
