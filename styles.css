@@ -114,3 +114,39 @@ html, body {
     opacity: 0.8;
     z-index: 0;
 }
+
+
+#colorButtonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.image-button {
+    background: none;
+    border: 3px solid transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    width: 100px;  /* Adjust based on your image size */
+    height: 100px; /* Adjust based on your image size */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-button:hover {
+    transform: scale(1.05);
+}
+
+.image-button.selected {
+    border-color: #000;
+}
