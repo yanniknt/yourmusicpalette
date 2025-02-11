@@ -149,7 +149,7 @@ html, body {
 }
 
 .image-button.selected {
-    border-color: #000;
+ 
     transform: scale(1.3);
 
 }
