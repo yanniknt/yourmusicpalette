@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musik 2 - Musik-Farb-Test</title>
+    <title>SWEET DISPOSITION</title>
     <link rel="stylesheet" href="styles.css">
-      <style>
-        /* Hide the default audio bar */
+    <style>
         audio {
             display: none;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>SWEET DISPOSITION - THE TEMPER TRAP</h1>
-       
-        <button id="playPauseButton">Play</button>
-    <audio id="audioElement" src="sweetdisposition.mp3"></audio>
-        <div id="colorButtonsContainer">
-        <button class="color-button" style="background-color: red;" data-color="red"></button>
-        <button class="color-button" style="background-color: green;" data-color="green"></button>
-        <button class="color-button" style="background-color: blue;" data-color="blue"></button>
-        <!-- Add more buttons as needed -->
+    <div class="rotating-text-container">
+        <svg id="rotating-text" viewBox="0 0 800 800">
+            <defs>
+                <path id="circle" 
+                      d="M400,400 m-200,0 a200,200 0 1,1 400,0 a200,200 0 1,1 -400,0"
+                      fill="none"/>
+            </defs>
+            <text>
+                <textPath xlink:href="#circle">SWEET DISPOSITION - TEMPER TRAP</textPath>
+            </text>
+        </svg>
     </div>
 
+    
+    <div class="container">
+      
+        <button id="playPauseButton">Play</button>
+        <audio id="audioElement" src="sweetdisposition.mp3"></audio>
 
+        <div id="colorButtonsContainer">
+            <button class="image-button" data-color="option6">
+                <img src="sweetdisposition1.png" alt="Option 6">
+            </button>
+            <button class="image-button" data-color="option7">
+                <img src="sweetdisposition2.png" alt="Option 7">
+            </button>
+            <button class="image-button" data-color="option8">
+                <img src="sweetdisposition3.png" alt="Option 8">
+            </button>
+            <button class="image-button" data-color="option9">
+                <img src="sweetdisposition4.png" alt="Option 9">
+            </button>
+            <button class="image-button" data-color="option10">
+                <img src="sweetdisposition5.png" alt="Option 10">
+            </button>
+        </div>
+
+        <a href="music3.html" class="next-button">NEXT</a>
+    </div>
 
     <script src="script.js"></script>
-  
-        <a href="music3.html" class="next-button">NEXT</a>
-
-
 </body>
 </html>
