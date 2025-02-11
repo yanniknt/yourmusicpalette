@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", function() {
     const resultContainer = document.getElementById("resultContainer");
     
-    // Collect all saved colors from localStorage
+    // Mapping of data-color values to image paths and names
+    const imageMap = {
+        'option1': { path: 'path/to/image1.jpg', name: 'Option 1' },
+        'option2': { path: 'path/to/image2.jpg', name: 'Option 2' },
+        'option3': { path: 'path/to/image3.jpg', name: 'Option 3' },
+        'option4': { path: 'path/to/image4.jpg', name: 'Option 4' },
+        'option5': { path: 'path/to/image5.jpg', name: 'Option 5' }
+    };
+    
+    // Collect all saved selections from localStorage
     const pages = ['music1.html', 'music2.html', 'music3.html', 'music4.html', 'music5.html'];
     const selections = {};
     
     pages.forEach(page => {
-        const color = localStorage.getItem(page);
-        if (color) {
-            selections[page] = color;
+        const selection = localStorage.getItem(page);
+        if (selection && imageMap[selection]) {
+            selections[page] = selection;
         }
     });
 
@@ -17,31 +26,32 @@ document.addEventListener("DOMContentLoaded", function() {
         const resultList = document.createElement("div");
         resultList.style.marginTop = "20px";
         
-        for (const [page, color] of Object.entries(selections)) {
+        for (const [page, selection] of Object.entries(selections)) {
             const songName = getSongName(page);
-            const colorDiv = document.createElement("div");
-            colorDiv.style.marginBottom = "10px";
+            const resultDiv = document.createElement("div");
+            resultDiv.style.marginBottom = "20px";
             
-            const colorSquare = document.createElement("span");
-            colorSquare.style.display = "inline-block";
-            colorSquare.style.width = "20px";
-            colorSquare.style.height = "20px";
-            colorSquare.style.backgroundColor = color;
-            colorSquare.style.marginRight = "10px";
-            colorSquare.style.verticalAlign = "middle";
+            const img = document.createElement("img");
+            img.src = imageMap[selection].path;
+            img.alt = imageMap[selection].name;
+            img.style.width = "100px";
+            img.style.height = "100px";
+            img.style.objectFit = "cover";
+            img.style.borderRadius = "10px";
+            img.style.marginRight = "10px";
             
-            colorDiv.appendChild(colorSquare);
-            colorDiv.appendChild(document.createTextNode(`${songName}: ${color}`));
-            resultList.appendChild(colorDiv);
+            resultDiv.appendChild(img);
+            resultDiv.appendChild(document.createTextNode(`${songName}: ${imageMap[selection].name}`));
+            resultList.appendChild(resultDiv);
         }
         
         resultContainer.appendChild(resultList);
     } else {
-        resultContainer.textContent = "No colors selected yet.";
+        resultContainer.textContent = "No selections made yet.";
     }
 });
 
-// Helper function to get song names
+// Helper function to get song names (keep your existing function)
 function getSongName(page) {
     const songNames = {
         'music1.html': 'Silver Soul - Beach House',
