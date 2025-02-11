@@ -3,11 +3,31 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // Mapping of data-color values to image paths and names
     const imageMap = {
-        'option1': { path: 'path/to/image1.jpg', name: 'Option 1' },
-        'option2': { path: 'path/to/image2.jpg', name: 'Option 2' },
-        'option3': { path: 'path/to/image3.jpg', name: 'Option 3' },
-        'option4': { path: 'path/to/image4.jpg', name: 'Option 4' },
-        'option5': { path: 'path/to/image5.jpg', name: 'Option 5' }
+        'option1': { path: 'silversoul1.png', name: 'Option 1' },
+        'option2': { path: 'silversoul2.png', name: 'Option 2' },
+        'option3': { path: 'silversoul3.png', name: 'Option 3' },
+        'option4': { path: 'silversoul4.png', name: 'Option 4' },
+        'option5': { path: 'silversoul5.png', name: 'Option 5' },
+        'option6': { path: 'sweetdisposition1.png', name: 'Option 6' },
+        'option7': { path: 'sweetdisposition2.png', name: 'Option 7' },
+        'option8': { path: 'sweetdisposition3.png', name: 'Option 8' },
+        'option9': { path: 'sweetdisposition4.png', name: 'Option 9' },
+        'option10': { path: 'sweetdisposition5.png', name: 'Option 10' },
+        'option11': { path: 'chopsuey1.png', name: 'Option 11' },
+         'option12': { path: 'chopsuey2.png', name: 'Option 12' },
+         'option13': { path: 'chopsuey3.png', name: 'Option 13' },
+         'option14': { path: 'chopsuey4.png', name: 'Option 14' },
+         'option15': { path: 'chopsuey5.png', name: 'Option 15' },
+         'option16': { path: 'milesdavis1.png', name: 'Option 16' },
+         'option17': { path: 'milesdavis2.png', name: 'Option 17' },
+         'option18': { path: 'milesdavis3.png', name: 'Option 18' },
+         'option19': { path: 'milesdavis4.png', name: 'Option 19' },
+         'option20': { path: 'milesdavis5.png', name: 'Option 20' },
+         'option21': { path: 'restacks1', name: 'Option 21' },
+        'option22': { path: 'restacks2', name: 'Option 22' },
+        'option23': { path: 'restacks3', name: 'Option 23' },
+        'option24': { path: 'restacks4', name: 'Option 24' },
+        'option25': { path: 'restacks5', name: 'Option 25' }
     };
     
     // Collect all saved selections from localStorage
