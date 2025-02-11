@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function() {
         'option25': { path: 'restacks5.png', name: 'Olive' }
     };
     
-    // Create a container for the circle
+    // Create a container for the circle with larger dimensions
     const circleContainer = document.createElement("div");
     circleContainer.style.position = "relative";
-    circleContainer.style.width = "400px";
-    circleContainer.style.height = "400px";
+    circleContainer.style.width = "800px"; // Increased from 400px
+    circleContainer.style.height = "800px"; // Increased from 400px
     circleContainer.style.margin = "50px auto";
 
     // Get all selections from localStorage
@@ -59,37 +59,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (selections.length > 0) {
         selections.forEach(({ selection, index }) => {
-            // Calculate position on the circle
+            // Calculate position on the circle with larger radius
             const angle = (index * 72) - 90; // -90 to start from the top, 72 degrees per item (360/5)
-            const radius = 150; // Distance from center
+            const radius = 300; // Increased from 150
             const x = radius * Math.cos(angle * Math.PI / 180);
             const y = radius * Math.sin(angle * Math.PI / 180);
 
-            // Create and position the color element
+            // Create and position the color element with larger dimensions
             const colorElement = document.createElement("div");
             colorElement.style.position = "absolute";
-            colorElement.style.left = `${200 + x - 40}px`; // Center point (200px) + offset - half of element width
-            colorElement.style.top = `${200 + y - 40}px`; // Center point (200px) + offset - half of element height
-            colorElement.style.width = "80px";
-            colorElement.style.height = "80px";
+            colorElement.style.left = `${400 + x - 75}px`; // Center point (400px) + offset - half of element width
+            colorElement.style.top = `${400 + y - 75}px`; // Center point (400px) + offset - half of element height
+            colorElement.style.width = "150px"; // Increased from 80px
+            colorElement.style.height = "150px"; // Increased from 80px
             colorElement.style.display = "flex";
             colorElement.style.flexDirection = "column";
             colorElement.style.alignItems = "center";
             colorElement.style.textAlign = "center";
 
-            // Create and style the image
+            // Create and style the image with larger dimensions
             const img = document.createElement("img");
             img.src = imageMap[selection].path;
             img.alt = imageMap[selection].name;
-            img.style.width = "60px";
-            img.style.height = "60px";
+            img.style.width = "120px"; // Increased from 60px
+            img.style.height = "120px"; // Increased from 60px
             img.style.borderRadius = "50%";
-            img.style.marginBottom = "5px";
+            img.style.marginBottom = "10px"; // Increased from 5px
 
-            // Create and style the color name
+            // Create and style the color name with larger font
             const colorName = document.createElement("span");
             colorName.textContent = imageMap[selection].name;
-            colorName.style.fontSize = "12px";
+            colorName.style.fontSize = "16px"; // Increased from 12px
             colorName.style.color = "#333";
 
             colorElement.appendChild(img);
