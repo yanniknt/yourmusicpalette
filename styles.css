@@ -155,10 +155,10 @@ html, body {
 }
 
 .circular-button {
-    width: 100px;  /* Set width */
-    height: 100px; /* Set equal height to make it circular */
+    width: 80px;  /* Set width */
+    height: 80px; /* Set equal height to make it circular */
     border-radius: 50%; /* This makes it circular */
-    background-color: #3498db; /* Button color */
+    background-color: #3A3B3C; /* Button color */
     border: none;
     color: white; /* Text color */
     cursor: pointer;
@@ -169,5 +169,5 @@ html, body {
 
 /* Hover effect */
 .circular-button:hover {
-    background-color: #2980b9;
+    background-color: #242526;
 }
