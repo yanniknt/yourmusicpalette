@@ -153,3 +153,21 @@ html, body {
     transform: scale(1.3);
 
 }
+
+.circular-button {
+    width: 100px;  /* Set width */
+    height: 100px; /* Set equal height to make it circular */
+    border-radius: 50%; /* This makes it circular */
+    background-color: #3498db; /* Button color */
+    border: none;
+    color: white; /* Text color */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect */
+.circular-button:hover {
+    background-color: #2980b9;
+}
