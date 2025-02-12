@@ -48,10 +48,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add title in the center top of the circle
     const title = document.createElement("h1");
-    title.textContent = "Your Musical Colors";
+    title.textContent = "Your very own tune palette";
     title.style.position = "absolute";
     title.style.width = "100%";
-    title.style.top = "160px";  // Positioned above the center
+    title.style.top = "200px";  // Positioned above the center
     title.style.textAlign = "center";
     title.style.margin = "0";
     title.style.fontSize = "2.5em";
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttonContainer = document.createElement("div");
     buttonContainer.style.position = "absolute";
     buttonContainer.style.width = "100%";
-    buttonContainer.style.bottom = "160px";  // Positioned below the center
+    buttonContainer.style.bottom = "200px";  // Positioned below the center
     buttonContainer.style.textAlign = "center";
     buttonContainer.style.zIndex = "1";
 
