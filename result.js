@@ -21,22 +21,22 @@ document.addEventListener("DOMContentLoaded", function() {
         'option11': { path: 'chopsuey1.png', name: 'basic blue' },
         'option12': { path: 'chopsuey2.png', name: 'normal red' },
         'option13': { path: 'chopsuey3.png', name: 'yellow-ish light green' },
-        'option14': { path: 'chopsuey4.png', name: 'wood color' },
+        'option14': { path: 'chopsuey4.png', name: 'burnt toast' },
         'option15': { path: 'chopsuey5.png', name: 'pink something' },
         
         // It Never Entered My Mind - Miles Davis options
-        'option16': { path: 'milesdavis1.png', name: 'Dark Blue' },
-        'option17': { path: 'milesdavis2.png', name: 'Navy' },
-        'option18': { path: 'milesdavis3.png', name: 'Light Blue' },
-        'option19': { path: 'milesdavis4.png', name: 'Midnight Blue' },
-        'option20': { path: 'milesdavis5.png', name: 'Royal Blue' },
+        'option16': { path: 'milesdavis1.png', name: 'slightly dark red' },
+        'option17': { path: 'milesdavis2.png', name: 'purple but kind of darker' },
+        'option18': { path: 'milesdavis3.png', name: 'infant blue' },
+        'option19': { path: 'milesdavis4.png', name: 'wood color' },
+        'option20': { path: 'milesdavis5.png', name: 'orangey yellow' },
         
         // Re:Stacks - Bon Iver options
-        'option21': { path: 'restacks1.png', name: 'Brown' },
-        'option22': { path: 'restacks2.png', name: 'Forest Green' },
-        'option23': { path: 'restacks3.png', name: 'Beige' },
-        'option24': { path: 'restacks4.png', name: 'Dark Green' },
-        'option25': { path: 'restacks5.png', name: 'Olive' }
+        'option21': { path: 'restacks1.png', name: 'pretty much white' },
+        'option22': { path: 'restacks2.png', name: 'average green' },
+        'option23': { path: 'restacks3.png', name: 'dark orange' },
+        'option24': { path: 'restacks4.png', name: 'almost lavender' },
+        'option25': { path: 'restacks5.png', name: 'sort of turquoise' }
     };
     
     // Create a container for the circle
