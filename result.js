@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", function() {
     // Mapping of data-color values to image paths with colors
     const imageMap = {
         // Silver Soul - Beach House options
-        'option1': { path: 'silversoul1.png', name: 'Dark Blue' },
-        'option2': { path: 'silversoul2.png', name: 'Purple' },
-        'option3': { path: 'silversoul3.png', name: 'Silver' },
-        'option4': { path: 'silversoul4.png', name: 'Navy Blue' },
-        'option5': { path: 'silversoul5.png', name: 'Black' },
+        'option1': { path: 'silversoul1.png', name: 'pretty teal' },
+        'option2': { path: 'silversoul2.png', name: 'blue-ish white' },
+        'option3': { path: 'silversoul3.png', name: 'sandy thing' },
+        'option4': { path: 'silversoul4.png', name: 'some violet' },
+        'option5': { path: 'silversoul5.png', name: 'pig-like' },
         
         // Sweet Disposition - Temper Trap options
-        'option6': { path: 'sweetdisposition1.png', name: 'Yellow' },
-        'option7': { path: 'sweetdisposition2.png', name: 'Orange' },
-        'option8': { path: 'sweetdisposition3.png', name: 'Light Blue' },
-        'option9': { path: 'sweetdisposition4.png', name: 'Pink' },
-        'option10': { path: 'sweetdisposition5.png', name: 'White' },
+        'option6': { path: 'sweetdisposition1.png', name: 'another light blue' },
+        'option7': { path: 'sweetdisposition2.png', name: 'dark-ish blue' },
+        'option8': { path: 'sweetdisposition3.png', name: 'just yellow' },
+        'option9': { path: 'sweetdisposition4.png', name: 'leaf-like' },
+        'option10': { path: 'sweetdisposition5.png', name: 'not quite Telekom' },
         
         // Chop Suey - System of a Down options
-        'option11': { path: 'chopsuey1.png', name: 'Red' },
-        'option12': { path: 'chopsuey2.png', name: 'Dark Grey' },
-        'option13': { path: 'chopsuey3.png', name: 'Brown' },
-        'option14': { path: 'chopsuey4.png', name: 'Black' },
-        'option15': { path: 'chopsuey5.png', name: 'Dark Red' },
+        'option11': { path: 'chopsuey1.png', name: 'basic blue' },
+        'option12': { path: 'chopsuey2.png', name: 'normal red' },
+        'option13': { path: 'chopsuey3.png', name: 'yellow-ish light green' },
+        'option14': { path: 'chopsuey4.png', name: 'wood color' },
+        'option15': { path: 'chopsuey5.png', name: 'pink something' },
         
         // It Never Entered My Mind - Miles Davis options
         'option16': { path: 'milesdavis1.png', name: 'Dark Blue' },
