@@ -19,6 +19,13 @@ html, body {
   font-style: normal;
 }
 
+.pinyon-script-regular {
+  font-family: "Pinyon Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -187,8 +194,7 @@ html, body {
 
 
 
-}
 
 h1, .title {
-    font-family: 'Pinyon Script', cursive;
+    font-family: "Pinyon Script", serif;
 }
