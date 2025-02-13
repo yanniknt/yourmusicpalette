@@ -201,6 +201,6 @@ h1, .title {
 
 h2 {
      font-family: "Pinyon Script", serif;
-     align-items: center;
-    justify-content: center;
+    margin-top: 2rem; /* Add some space at the top */
+    z-index: 2; /* Ensure it appears above the rotating text */
 }
