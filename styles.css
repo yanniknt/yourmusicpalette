@@ -27,9 +27,11 @@ html, body {
 
 
 .container {
+    flex: 1; /* This will make the container take up remaining space */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center the content vertically within the container */
     position: relative;
     z-index: 2;
     padding: 20px;
