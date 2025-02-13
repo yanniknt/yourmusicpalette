@@ -198,3 +198,9 @@ h1, .title {
     font-family: "Pinyon Script", serif;
      font-size: 45px;
 }
+
+h2 {
+     font-family: "Pinyon Script", serif;
+     align-items: center;
+    justify-content: center;
+}
