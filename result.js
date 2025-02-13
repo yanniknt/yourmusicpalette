@@ -48,27 +48,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add title in the center top of the circle
     const title = document.createElement("h1");
-    title.textContent = "Your very own";
+    title.textContent = "Your very own tune palette";
     title.style.position = "absolute";
     title.style.width = "100%";
-    title.style.top = "220px";  // Positioned above the center
+    title.style.top = "240px";  // Positioned above the center
     title.style.textAlign = "center";
     title.style.margin = "0";
-    title.style.fontSize = "2.5em";
+    title.style.fontSize = "3.5em";
     title.style.zIndex = "1";
     circleContainer.appendChild(title);
 
-       // Add title in the center top of the circle
-    const title = document.createElement("h1");
-    title.textContent = "tune palette";
-    title.style.position = "absolute";
-    title.style.width = "100%";
-    title.style.top = "280px";  // Positioned above the center
-    title.style.textAlign = "center";
-    title.style.margin = "0";
-    title.style.fontSize = "4.5em";
-    title.style.zIndex = "1";
-    circleContainer.appendChild(title);
+
 
     // Add button in the center bottom of the circle
     const buttonContainer = document.createElement("div");
