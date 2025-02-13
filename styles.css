@@ -8,6 +8,7 @@ html, body {
     background-color: #FAF0E6;
     position: relative;
     overflow: hidden;
+     font-family: 'Geist', sans-serif;
 }
 
 .container {
@@ -165,9 +166,18 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+      font-family: 'Geist', sans-serif;
 }
 
 /* Hover effect */
 .circular-button:hover {
     background-color: #242526;
+}
+
+
+
+}
+
+h1, .title {
+    font-family: 'Pinyon Script', cursive;
 }
