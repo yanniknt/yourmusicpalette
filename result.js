@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     title.style.top = "240px";  // Positioned above the center
     title.style.textAlign = "center";
     title.style.margin = "0";
-    title.style.fontSize = "3.5em";
+    title.style.fontSize = "2.5em";
     title.style.zIndex = "1";
     circleContainer.appendChild(title);
 
