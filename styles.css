@@ -64,7 +64,6 @@ html, body {
 
 #rotating-text textPath {
     font-size: 24px;
-    font-family: "Montserrat";
     font-family: 'Geist', serif;
     text-transform: uppercase;
     letter-spacing: 20px;
@@ -197,4 +196,5 @@ html, body {
 
 h1, .title {
     font-family: "Pinyon Script", serif;
+     font-size: 45px;
 }
